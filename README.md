@@ -27,6 +27,6 @@ Manual php.net y multiples foros en la web
 
 ![Alt text](/screenshot/delete_task.png?raw=true "Eliminar una tarea")
 
-![Alt text](/screenshot/edit_task.png?raw=true "Editar una tarea")
+![Alt text](/screenshot/edit_page.png?raw=true "Editar una tarea")
 
 ![Alt text](/screenshot/view_task.png?raw=true "Página principal con tareas por completar")
