@@ -63,28 +63,34 @@
                     <tbody>
                         <?php
                         include_once("db.php");
-                        $query = "SELECT * FROM tasks";
-                        $result = mysqli_query($conn,$query);
-                        
-                        while ($row = $result->fetch_array()) {
-                            $rows[] = $row;
-                        }
 
-                        foreach ($rows as $row) {
-                        
-                            ?>
-                                <tr>
-                                    <td><?= $row['name'] ?></td>
-                                    <td><?= $row['description'];?></td>
-                                    <td><?= $row['created_at'];?></td>
-                                    <td>
-                                        <a href="edit.php/?id=<?= $row['id']; ?>" class="btn btn-primary"><i class="fas fa-pencil-alt"></i></a>
-                                        <a href="delete_task.php/?id=<?= $row['id']; ?>" class="btn btn-danger"><i class="fas fa-trash"></i></a>
-                                    </td>
-                                </tr>
-                            <?php
-                        }
+                        if (mysqli_connect_error()) {
+                            
+                        } else {
+                            $query = "SELECT * FROM tasks";
+                            $result = mysqli_query($conn,$query);
+                            
+                            while ($row = $result->fetch_array()) {
+                                $rows[] = $row;
+                            }
 
+                            foreach ($rows as $row) {
+                            
+                                ?>
+                                    <tr>
+                                        <td><?= $row['name'] ?></td>
+                                        <td><?= $row['description'];?></td>
+                                        <td><?= $row['created_at'];?></td>
+                                        <td>
+                                            <a href="edit.php/?id=<?= $row['id']; ?>" class="btn btn-primary"><i class="fas fa-pencil-alt"></i></a>
+                                            <a href="delete_task.php/?id=<?= $row['id']; ?>" class="btn btn-danger"><i class="fas fa-trash"></i></a>
+                                        </td>
+                                    </tr>
+                                <?php
+                            }
+
+                        }
+                            
                         ?>
                     </tbody>
                 </table>
