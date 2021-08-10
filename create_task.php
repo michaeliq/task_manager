@@ -15,7 +15,7 @@ if(isset($_POST['name']) && isset($_POST['description'])){
         $_SESSION['msgColor'] = "success";
         header("location: index.php");    
     }else{
-        header("location: index.php"); 
+        header("location: index.php");
     }
     
 
