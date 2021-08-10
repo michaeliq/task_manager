@@ -14,6 +14,8 @@ if(isset($_POST['name']) && isset($_POST['description'])){
         $_SESSION['message'] = "Your task Added successfully!";
         $_SESSION['msgColor'] = "success";
         header("location: index.php");    
+    }else{
+        header("location: index.php"); 
     }
     
 
