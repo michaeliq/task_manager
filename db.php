@@ -17,14 +17,14 @@
 
     ob_end_clean();
 
-    $url = parse_url(getenv("CLEARDB_DATABASE_URL"));
 
-    $server = $url["host"];
-    $username = $url["user"];
-    $password = $url["pass"];
-    $db = substr($url["path"], 1);
+    $hostname="us-cdbr-east-04.cleardb.com";
+    $username="b8f09b67c29dc8";
+    $password="394e1ac8";
+    $database="heroku_a75d4c0bb9904be";
+
     try {
-        $conn = mysqli_connect($server,$username,$password,$db);
+        $conn = mysqli_connect($hostname,$username,$password,$database);
     } catch (Exception $e) {
         echo "error en conexión";
     }

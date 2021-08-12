@@ -1,7 +1,5 @@
 <!DOCTYPE html>
-<?php
-    require 'vendor/autoload.php';
-?>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -75,6 +73,10 @@
                             
                             while ($row = $result->fetch_array()) {
                                 $rows[] = $row;
+                            }
+
+                            if($result->num_rows == 0){
+                                $rows = array();
                             }
 
                             foreach ($rows as $row) {
