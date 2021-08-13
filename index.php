@@ -45,7 +45,7 @@
                                 <textarea name="description" rows="2" class="form-control" placeholder="insert a description"></textarea>
                             </div>
                             <div class="form-group">
-                                <input type="submit" value="add task" class="btn btn-success">
+                                <input type="submit" value="add task" class="btn btn-success w-100">
                             </div>
                         </form>
                     </div>
@@ -86,7 +86,7 @@
                                         <td><?= $row['name'] ?></td>
                                         <td><?= $row['description'];?></td>
                                         <td><?= $row['created_at'];?></td>
-                                        <td>
+                                        <td class="w-25">
                                             <a href="edit.php/?id=<?= $row['id']; ?>" class="btn btn-primary"><i class="fas fa-pencil-alt"></i></a>
                                             <a href="delete_task.php/?id=<?= $row['id']; ?>" class="btn btn-danger"><i class="fas fa-trash"></i></a>
                                         </td>
