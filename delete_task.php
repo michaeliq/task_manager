@@ -14,5 +14,5 @@ if(!isset($_SESSION)){
     $_SESSION['message'] = "Task was deleted";
     $_SESSION['msgColor'] = "danger";
 }
-header("location: /crud_php/index.php");
+header("location: index.php");
 ?>
