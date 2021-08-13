@@ -41,14 +41,14 @@ if(isset($_GET['id'])){
     if($name == "" || $description == ""){
         $_SESSION['message'] = "Don't update the task";
         $_SESSION['msgColor'] = "warning";
-        return header("location: index.php");
+        return header("location: ". "/crud_php/");
     }
 
     $query = sprintf("UPDATE tasks SET name = '%s', description = '%s' WHERE id = '%s'",$name,$description,$id);
     $result = mysqli_query($conn,$query);
     $_SESSION['message'] = "Task was updated";
     $_SESSION['msgColor'] = "info";
-    header("location: index.php");
+    header("location: /crud_php/");
 }
 
 include("include/footer.php");
