@@ -36,10 +36,10 @@ Manual php.net y multiples foros en la web
 
 # Imagenes
 
-![Alt text](/screenshot/add_task.png?raw=true "Añadir tareas")
+![Alt Añadir tareas](/screenshot/add_task.png?raw=true "Añadir tareas")
 
-![Alt text](/screenshot/delete_task.png?raw=true "Eliminar una tarea")
+![Alt Eliminar tareas](/screenshot/delete_task.png?raw=true "Eliminar una tarea")
 
-![Alt text](/screenshot/edit_page.png?raw=true "Editar una tarea")
+![Alt Editar tarea](/screenshot/edit_page.png?raw=true "Editar una tarea")
 
-![Alt text](/screenshot/view_task.png?raw=true "Página principal con tareas por completar")
+![Alt Home](/screenshot/view_task.png?raw=true "Página principal con tareas por completar")
